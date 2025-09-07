@@ -1,0 +1,71 @@
+Class: Person
+-------------------------
+- name: String
+- address: String
+- phoneNumber: String
+- emailAddress: String
+-------------------------
++ Person(name, address, phone, email)
++ toString(): String
+markdown
+Copy code
+
+
+Class: Student (extends Person)
+-------------------------
+- status: String
+-------------------------
++ FRESHMAN: String = "Freshman"
++ SOPHOMORE: String = "Sophomore"
++ JUNIOR: String = "Junior"
++ SENIOR: String = "Senior"
+-------------------------
++ Student(name, address, phone, email, status)
++ toString(): String
+markdown
+Copy code
+
+
+Class: Employee (extends Person)
+-------------------------
+- office: String
+- salary: double
+- dateHired: MyDate2
+-------------------------
++ Employee(name, address, phone, email, office, salary, dateHired)
++ toString(): String
+markdown
+Copy code
+
+
+Class: Faculty (extends Employee)
+-------------------------
+- officeHours: String
+- rank: String
+-------------------------
++ Faculty(name, address, phone, email, office, salary, dateHired, officeHours, rank)
++ toString(): String
+markdown
+Copy code
+
+
+Class: Staff (extends Employee)
+-------------------------
+- title: String
+-------------------------
++ Staff(name, address, phone, email, office, salary, dateHired, title)
++ toString(): String
+sql
+Copy code
+
+
+Class: MyDate2
+-------------------------
+- year: int
+- month: int
+- day: int
+-------------------------
++ MyDate2()                  // current date
++ MyDate2(elapsedTime: long) // from ms since 1970
++ MyDate2(year, month, day)
++ toString(): String
