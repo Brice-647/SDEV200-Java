@@ -17,10 +17,10 @@ public class FourImagesGrid extends Application {
         grid.setAlignment(Pos.CENTER);
 
         // Load images and create ImageViews
-        ImageView img1 = new ImageView(new Image(getClass().getResource("image1.png").toExternalForm()));
-        ImageView img2 = new ImageView(new Image(getClass().getResource("image2.png").toExternalForm()));
-        ImageView img3 = new ImageView(new Image(getClass().getResource("image3.png").toExternalForm()));
-        ImageView img4 = new ImageView(new Image(getClass().getResource("image4.png").toExternalForm()));
+        ImageView img1 = new ImageView(new Image(getClass().getResource("flag1.gif").toExternalForm()));
+        ImageView img2 = new ImageView(new Image(getClass().getResource("flag2.gif").toExternalForm()));
+        ImageView img3 = new ImageView(new Image(getClass().getResource("flag6.gif").toExternalForm()));
+        ImageView img4 = new ImageView(new Image(getClass().getResource("flag7.gif").toExternalForm()));
 
         // Set a preferred size for images
         double size = 200;
@@ -47,3 +47,4 @@ public class FourImagesGrid extends Application {
         launch(args);
     }
 }
+
